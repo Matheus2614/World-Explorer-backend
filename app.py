@@ -36,6 +36,11 @@ def gerar_resposta(pais, assunto):
 
     return conteudo
 
+@app.route('/')
+def index():
+    # Retorna uma mensagem de boas-vindas quando a rota raiz é acessada.
+    return jsonify({'message': 'A API está funcionando!'}), 200
+
 @app.route('/conteudo', methods=['POST'])
 def make_conteudo():
     try:
