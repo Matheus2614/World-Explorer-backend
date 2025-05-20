@@ -65,4 +65,4 @@ def make_conteudo():
         return jsonify({'error': str(e)}), 500  # Retorna código 500 para erros internos
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
